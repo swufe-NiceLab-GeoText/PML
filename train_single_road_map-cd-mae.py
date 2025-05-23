@@ -185,7 +185,7 @@ class MaskedTrainer:
                 optimizer.zero_grad()
                 pred, recon, mask = model(c_map, exf, self.road_map, is_pretrain=True)
 
-                # 联合损失计算
+                
                 task_loss = F.l1_loss(pred, f_map * self.args.scaler_Y)
                 recon_loss = calc_recon_loss(recon, f_map, mask)
                 loss = recon_loss + self.args.lambda_recon * task_loss
