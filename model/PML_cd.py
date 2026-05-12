@@ -151,10 +151,10 @@ class SpatialDecoder(nn.Module):
         )
     def forward(self, x):
         return self.recon_head(x)
-class UNO(nn.Module):
+class PML(nn.Module):
     def __init__(self, height=32, width=32, use_exf=False, scale_factor=4,
                  channels=128, sub_region=4, scaler_X=1, scaler_Y=1, args=None):
-        super(UNO, self).__init__()
+        super(PML, self).__init__()
         self.height = height
         self.width = width
         self.masker = SpatialMask(mask_ratio=0.75, patch_size=4)
