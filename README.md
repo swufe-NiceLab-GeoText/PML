@@ -5,7 +5,7 @@ This repository provides a reference implementation of the paper: *Enhancing Fin
 Multimodal Learning*
 ## Overview
 
-​                                                                        <img alt="overview" height="400" src="image/framework.png" width="400"/>
+​                                                                    
 
 Urban flow inference, especially when based on coarse-grained or partially observed data, plays a crucial role in developing resilient and sustainable urban mobility systems. While advancing
 spatial modeling and external factor integration, existing methods face limitations in capturing cross-modal structural dependencies, ensuring robustness under partial or noisy observations, and adapting training paradigms to evolving or degraded data conditions.
